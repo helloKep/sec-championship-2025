@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; */
+    font-family: 'IBM Plex Sans Condensed';
+    background: linear-gradient(135deg, #0E2C6E 0%, #0E2C6E 100%);
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+}
+
+header {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    opacity: 0.95;
+}
+
+.simulator-card {
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.teams-section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #0E2C6E;
+}
+
+.team-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.team-row:last-child {
+    border-bottom: none;
+}
+
+.team-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.team-number {
+    font-weight: bold;
+    color: #0E2C6E;
+    font-size: 1.1rem;
+}
+
+.team-name {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.toggle-group {
+    display: flex;
+    gap: 8px;
+}
+
+.toggle-btn {
+    padding: 8px 20px;
+    border: 2px solid black;
+    background: white;
+    color: black;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.toggle-btn:hover {
+    background: #f0f0f0;
+}
+
+.toggle-btn.active {
+    background: #F7D35E;
+    border: 2px solid #F7D35E;
+    color: black;
+}
+
+.actions-section {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.action-btn {
+    flex: 1;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.action-btn.primary {
+    background: #0E2C6E;
+    color: white;
+}
+
+.action-btn.primary:hover {
+    background: #0E2C6E;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.action-btn.secondary {
+    background: #f0f0f0;
+    color: #333;
+}
+
+.action-btn.secondary:hover {
+    background: #e0e0e0;
+    transform: translateY(-2px);
+}
+
+.results-section {
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 2px solid #e0e0e0;
+}
+
+.results-section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #0E2C6E;
+    text-align: center;
+}
+
+.results-content {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.championship-team {
+    background: linear-gradient(135deg, #F7D35E 0%, #F7D35E 100%);
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+    font-weight: 600;
+    font-size: 1.3rem;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.championship-Alabama {
+    background: linear-gradient(135deg, #9E1B32 0%, #9E1B32 100%);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+    font-weight: 600;
+    font-size: 1.3rem;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.championship-Georgia {
+    background: linear-gradient(135deg, #BA0C2F 0%, #BA0C2F 100%);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+    font-weight: 600;
+    font-size: 1.3rem;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.championship-Ole_Miss {
+    background: linear-gradient(135deg, #006BA6 0%, #006BA6 100%);
+    color: #C8102E;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+    font-weight: 600;
+    font-size: 1.3rem;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.championship-Texas_A_M {
+    background: linear-gradient(135deg, #500000 0%, #500000 100%);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+    font-weight: 600;
+    font-size: 1.3rem;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.vs-text {
+    margin: 15px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0E2C6E;
+}
+
+.error-section {
+    margin-top: 20px;
+    padding: 15px;
+    background: #fee;
+    border-left: 4px solid #f44;
+    border-radius: 4px;
+    color: #c00;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+    opacity: 0.9;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .simulator-card {
+        padding: 20px;
+    }
+    
+    .team-name {
+        font-size: 1rem;
+    }
+    
+    .actions-section {
+        flex-direction: column;
+    }
+}

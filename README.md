@@ -1,1 +1,0 @@
-# sec-championship-2025

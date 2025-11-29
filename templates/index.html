@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEC Championship Simulator</title>
+    <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans Condensed' rel='stylesheet'>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏈 SEC Championship Simulator</h1>
+            <p class="subtitle">Figure out which teams would compete in the SEC Championship Game</p>
+        </header>
+
+        <div class="simulator-card">
+            <div class="teams-section">
+                <h2>Select Team Results</h2>
+                
+                <div class="team-row" data-team="tamu">
+                    <div class="team-info">
+                        <span class="team-number">1.</span>
+                        <span class="team-name"><b>Texas A&M</b> <small>vs. Texas</small></span>
+                    </div>
+                    <div class="toggle-group">
+                        <button class="toggle-btn active" data-result="win">Win</button>
+                        <button class="toggle-btn" data-result="loss">Loss</button>
+                    </div>
+                </div>
+
+                <div class="team-row" data-team="bama">
+                    <div class="team-info">
+                        <span class="team-number">2.</span>
+                        <span class="team-name"><b>Alabama</b> <small>vs. Auburn</small></span>
+                    </div>
+                    <div class="toggle-group">
+                        <button class="toggle-btn active" data-result="win">Win</button>
+                        <button class="toggle-btn" data-result="loss">Loss</button>
+                    </div>
+                </div>
+
+                <div class="team-row" data-team="uga">
+                    <div class="team-info">
+                        <span class="team-number">3.</span>
+                        <span class="team-name"><b>Georgia</b> <small>vs. Georgia Tech</small></span>
+                    </div>
+                    <div class="toggle-group">
+                        <button class="toggle-btn active" data-result="win">Win</button>
+                        <button class="toggle-btn" data-result="loss">Loss</button>
+                    </div>
+                </div>
+
+                <div class="team-row" data-team="miss">
+                    <div class="team-info">
+                        <span class="team-number">4.</span>
+                        <span class="team-name"><b>Ole Miss</b> <small>vs. Mississippi State</small></span>
+                    </div>
+                    <div class="toggle-group">
+                        <button class="toggle-btn active" data-result="win">Win</button>
+                        <button class="toggle-btn" data-result="loss">Loss</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="actions-section">
+                <button id="randomize-btn" class="action-btn secondary">🎲 Randomize</button>
+                <button id="go-btn" class="action-btn primary">Go</button>
+            </div>
+
+            <div id="results-section" class="results-section hidden">
+                <h2>SEC Championship Game Participants</h2>
+                <div id="results-content" class="results-content"></div>
+            </div>
+
+            <div id="error-section" class="error-section hidden">
+                <p id="error-message"></p>
+            </div>
+        </div>
+
+        <footer>
+            <p>Built with Python, Flask & Clingo ASP</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
