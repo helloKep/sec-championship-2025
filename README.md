@@ -149,7 +149,7 @@ MIT License - feel free to use and modify for your own projects.
 
 ## Author
 
-Built with Python, Flask, and Clingo ASP by [Your Name]
+Built with Python, Flask, and Clingo ASP by kep, with development help from [claude.ai](https://claude.ai)
 
 ## Acknowledgments
 
